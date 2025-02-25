@@ -53,34 +53,40 @@
 
 
 
-<th><center>ID<center></th>
-<th><center>Title<center></th>
-<th><center>Slogan</center></th>
-<th><center>Description</center></th>
+
+
+<th><center>Image</center></th>
+<th><center>Name<center></th>
+<th><center>Category</center></th>
+
+<th><center></center></th>
 
 
 
 <th colspan="2"><center></center></th>
 </tr>
 
-@foreach($contents as $content)
+@foreach($portfolios as $portfolio)
 <tr>
-<td><center>{{$content->id}}</center></td>
-<td><center>{{$content->title}}</center></td>
 
-<td><center>{{$content->slogan}}</center></td>
-<td><center>{{$content->description}}</center></td>
+
+<td><center><img src="/images/{{$portfolio->image}}" alt="" height="60px" width="90"></center></td>
+<td><center>{{$portfolio->name}}</center></td>
+<td><center>{{$portfolio->category}}</center></td>
 
 
 <td colspan="2">
                    <center>
-      
+        <form action="{{ route('portfolios.destroy',$portfolio->id) }}" method="POST">
      
                     
       
-     <a class="btn btn-primary" href="{{ route('content.edit',$content->id) }}">Edit</a>
+    
 
-     
+     @csrf
+     @method('DELETE')
+
+     <button type="submit" class="btn btn-danger">Delete</button>
 
 </center>
 
@@ -100,7 +106,7 @@
     </div>
 
 
-    {{ $contents->links() }} 
+
 
 
 

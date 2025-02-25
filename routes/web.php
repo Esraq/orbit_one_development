@@ -10,6 +10,10 @@ use App\Http\Controllers\ContentController;
 
 use App\Http\Controllers\ServiceController;
 
+use App\Http\Controllers\ChangePasswordController;
+use App\Http\Controllers\PortfolioController;
+
+
 Route::resource('/banner',BannerController::class);
 
 
@@ -17,6 +21,12 @@ Route::resource('/content',ContentController::class);
 
 
 Route::resource('/service',ServiceController::class);
+
+Route::resource('/change_password',ChangePasswordController::class);
+
+
+
+Route::resource('/portfolios',PortfolioController::class);
 
 
 Route::get('/', [SiteController::class, 'home']);

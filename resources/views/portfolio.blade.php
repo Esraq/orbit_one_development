@@ -28,21 +28,7 @@
             </div><!-- end title -->
         </div><!-- end container -->
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="portfolio-filter text-center">
-                        <ul>
-                            <li><a class="btn btn-dark btn-radius btn-brd active" href="#" data-filter="*"><span class="oi hidden-xs" data-glyph="grid-three-up"></span> All</a></li>
-                            <li><a class="btn btn-dark btn-radius btn-brd" data-toggle="tooltip" data-placement="top" title="5" href="#" data-filter=".cat1">Design</a></li>
-                            <li><a class="btn btn-dark btn-radius btn-brd" href="#" data-toggle="tooltip" data-placement="top" title="12" data-filter=".cat2">Mockup</a></li>
-                            <li><a class="btn btn-dark btn-radius btn-brd" href="#" data-toggle="tooltip" data-placement="top" title="21" data-filter=".cat3">Logos</a></li>
-                            <li><a class="btn btn-dark btn-radius btn-brd" href="#" data-toggle="tooltip" data-placement="top" title="11" data-filter=".cat4">HTML</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
+        
             <hr class="invis">
 
             <div id="da-thumbs" class="da-thumbs portfolio">
