@@ -12,6 +12,7 @@ use App\Http\Controllers\ServiceController;
 
 use App\Http\Controllers\ChangePasswordController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\AdminController;
 
 
 Route::resource('/banner',BannerController::class);
@@ -24,7 +25,7 @@ Route::resource('/service',ServiceController::class);
 
 Route::resource('/change_password',ChangePasswordController::class);
 
-
+Route::resource('/admin',AdminController::class);
 
 Route::resource('/portfolios',PortfolioController::class);
 

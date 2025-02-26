@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ORBIT</title>
+    <title>Orbit Media</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 	<!-- BOOTSTRAP STYLES-->
   <link href="{{url('/assets/css/bootstrap.css')}}" rel="stylesheet" />
@@ -86,20 +86,21 @@ font-size: 16px;">
 
                         <ul class="nav nav-second-level">
                         <li>
-                                <a href="{{url('/location')}}">Banner</a>
+                                <a href="{{url('/banner')}}">Banner</a>
                             </li>
 
                             <li>
-                                <a href="{{url('/control_panel')}}">Recent Projects</a>
-                            </li>
-
-
-                            <li>
-                                <a href="{{url('/location')}}">Upcoming Projects</a>
+                                <a href="{{url('/service')}}">Services</a>
                             </li>
 
                             <li>
-                                <a href="{{url('/location')}}">Contents</a>
+                                <a href="{{url('/portfolios')}}">Portfolio</a>
+                            </li>
+
+
+                          
+                            <li>
+                                <a href="{{url('/content')}}">Contents</a>
                             </li>
 
                          
@@ -113,28 +114,7 @@ font-size: 16px;">
 
 
 
-                    <li>
-                        <a  href="#"><i class="fa fa-dashboard fa-3x"></i>Order</a>
-                        <ul class="nav nav-second-level">
-
-
-                            <li>
-                                <a href="{{url('/pending_order')}}">Pending Order</a>
-                            </li>
-
-
-                            <li>
-                                <a href="{{url('/admin_order_accept_list')}}">Accepted Order</a>
-                            </li>
-
-                            <li>
-                                <a href="{{url('/admin_order_cancel_list')}}">Cancelled Order</a>
-                            </li>
-
-
-                            </ul>
-                    </li>
-
+                   
 
                  
                        <li>
@@ -146,7 +126,7 @@ font-size: 16px;">
                                     </li>
 
                                     <li>
-                                        <a href="/user_list">User List</a>
+                                        <a href="{{url('/admin')}}">Admin List</a>
                                     </li>
 
                                    

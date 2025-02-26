@@ -9,13 +9,13 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>GoodWEB Solutions - Responsive HTML5 Landing Page Template</title>  
+    <title>Orbit</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/logos/logo.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/logos/logo.png">
 
     <!-- Bootstrap CSS -->
@@ -90,7 +90,7 @@
                 <div class="left-top" style="display: flex; align-items: center; gap: 20px;">
                     <div class="email-box">
                         <a href="#" style="color: #ffffff; text-decoration: none;">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i> youremail@gmail.com
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i> {{$email->description}}
                         </a>
                     </div>
                     <div class="phone-box">
@@ -127,7 +127,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" height="60px" width="120px"    alt="image"></a>
+                    <a class="navbar-brand" href="/"><img src="images/logos/logo.png" height="60px" width="120px"    alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
