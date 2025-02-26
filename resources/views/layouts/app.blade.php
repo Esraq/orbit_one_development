@@ -129,7 +129,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/"><img src="images/logos/logo.png" height="60px" width="120px"    alt="image"></a>
+                    <a class="navbar-brand" href="{{ url('/') }}">
+    <img src="{{ asset('images/logos/logo.png') }}" height="60px" width="120px" alt="image">
+</a>
+
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
@@ -155,7 +158,8 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="widget clearfix">
                     <div class="widget-title">
-                        <img src="images/logos/logo.png" height="60px" width="120px"  />
+                    <img src="{{ asset('images/logos/logo.png') }}" height="60" width="120" alt="Logo">
+
                     </div>
                     <p style="color: #d1d1d1;">Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
                     <p style="color: #d1d1d1;">Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
@@ -214,14 +218,17 @@
 </div>
 
 
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+<a href="#" id="scroll-to-top" class="dmtop global-radius">
+    <i class="fa fa-angle-up"></i>
+</a>
 
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/portfolio.js"></script>
-    <script src="js/hoverdir.js"></script>    
+<!-- ALL JS FILES -->
+<script src="{{ asset('js/all.js') }}"></script>
+<!-- ALL PLUGINS -->
+<script src="{{ asset('js/custom.js') }}"></script>
+<script src="{{ asset('js/portfolio.js') }}"></script>
+<script src="{{ asset('js/hoverdir.js') }}"></script>
+ 
 
 </body>
 </html>

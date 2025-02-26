@@ -97,9 +97,7 @@ class ServiceController extends Controller
             'name'=>'required|min:1',
             'details' => 'required|min:1',
 
-            'image' => 'required|min:1',
-
-
+          
              
 
 
@@ -135,7 +133,7 @@ class ServiceController extends Controller
 
         ///echo "updated";
 
-        return redirect()->route('service.index')->with('success', 'Banner updated successfully!');
+        return redirect()->route('service.index')->with('success', 'Service updated successfully!');
     }
 
     /**

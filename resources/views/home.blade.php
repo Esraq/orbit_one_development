@@ -152,7 +152,7 @@
                     </div>
                     <div class="service-dit">
                         <h3>{{ $service->name }}</h3>
-                        <a href="#" class="btn text-dark" style="background-color: rgb(153, 204, 255); border-color: #99ccff;">
+                        <a href="/projects/{{$service->id}}" class="btn text-dark" style="background-color: rgb(153, 204, 255); border-color: #99ccff;">
                             Details
                         </a>
                     </div>

@@ -38,7 +38,18 @@ Route::get('/services', [SiteController::class, 'services'])->name('services');
 
 Route::get('/portfolio', [SiteController::class, 'portfolio'])->name('portfolio'); 
 
-Route::get('/contact', [SiteController::class, 'contact'])->name('contact'); 
+Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
+
+////Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
+
+Route::get('/projects/{id}', [SiteController::class, 'service_details']);
+
+
+
+
+
+
+
 
 
 Route::get('/dashboard', function () {
