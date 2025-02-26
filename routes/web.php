@@ -30,17 +30,15 @@ Route::resource('/admin',AdminController::class);
 Route::resource('/portfolios',PortfolioController::class);
 
 
-Route::get('/', [SiteController::class, 'home']);
+Route::get('/', [SiteController::class, 'home'])->name('home'); 
 
-Route::get('/about_us', [SiteController::class, 'about']);
+Route::get('/about-us', [SiteController::class, 'about'])->name('about_us'); 
 
-Route::get('/services', [SiteController::class, 'services']);
+Route::get('/services', [SiteController::class, 'services'])->name('services'); 
 
+Route::get('/portfolio', [SiteController::class, 'portfolio'])->name('portfolio'); 
 
-Route::get('/portfolio', [SiteController::class, 'portfolio']);
-
-
-Route::get('/contact', [SiteController::class, 'contact']);
+Route::get('/contact', [SiteController::class, 'contact'])->name('contact'); 
 
 
 Route::get('/dashboard', function () {

@@ -35,8 +35,8 @@
                                 <h1 class="homepage-three-title">{{ $banner->title }}</h1>
                                 <h2>{{ $banner->slogan }}</h2>
                                 <div class="slider-content-btn">
-                                    <a class="button btn btn-light btn-radius btn-brd" href="#">Read More</a>
-                                    <a class="button btn btn-light btn-radius btn-brd" href="#">Contact</a>
+                                    <a class="button btn btn-light btn-radius btn-brd" href="{{route('about_us')}}">Read More</a>
+                                    <a class="button btn btn-light btn-radius btn-brd" href="{{route('contact')}}">Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -65,9 +65,9 @@
                         <h2>Welcome to Orbit One Solutions</h2>
                        
 
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. </p>
+                        <p> {{$about_us->description}}</p>
 
-                        <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>
+                        <a href="{{route('about_us')}}" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -91,12 +91,11 @@
                 <div class="col-md-6">
                     <div class="message-box">
                         <h4>Who We are</h4>
-                        <h2>We Are GoodWEB Solutions</h2>
-                        <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+                        <h2>We you should choose us</h2>
+                        <p>{{$choose->description}}</p>
 
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. </p>
-
-                        <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>
+                        
+                        <a href="{{route('about_us')}}" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -108,121 +107,63 @@
             <div class="row text-center stat-wrap">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-briefcase"></i></span>
-                    <p class="stat_count">1200</p>
+                    <p class="stat_count">{{$completed_project->description}}</p>
                     <h3>Complated Projects</h3>
                 </div><!-- end col -->
 
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-happy"></i></span>
-                    <p class="stat_count">3210</p>
+                    <p class="stat_count">{{$happy_client->description}}</p>
                     <h3>Happy Clients</h3>
                 </div><!-- end col -->
 
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-idea"></i></span>
-                    <p class="stat_count">3781</p>
+                    <p class="stat_count">{{$customer_service->description}}</p>
                     <h3>Customer Services</h3>
                 </div><!-- end col -->
 
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-customer-service"></i></span>
-                    <p class="stat_count">4300</p>
-                    <h3>Answered Questions</h3>
+                    <p class="stat_count">{{$employees->description}}</p>
+                    <h3>Employees</h3>
                 </div><!-- end col -->
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
 
     <div id="services" class="parallax section lb">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3>Our Service</h3>
-                <p class="lead">Our Service unlimited solutions to all your business needs. in the installation package we prepare search engine optimization, social media support, we provide corporate identity and graphic design services.</p>
-            </div><!-- end title -->
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Our Projects</h3>
+            <p class="lead">
+                Our Service offers unlimited solutions to all your business needs. In the installation package, we prepare search engine optimization, social media support, and provide corporate identity and graphic design services.
+            </p>
+        </div><!-- end title -->
 
-            <div class="owl-services owl-carousel owl-theme">
+        <div class="owl-services owl-carousel owl-theme">
+            @foreach($services as $service)
                 <div class="service-widget">
                     <div class="post-media wow fadeIn">
-                        <a href="uploads/service_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="uploads/service_01.jpg" alt="" class="img-responsive img-rounded">
+                        <a href="{{ asset('images/' . $service->image) }}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius">
+                            <i class="flaticon-unlink"></i>
+                        </a>
+                        <img src="{{ asset('images/' . $service->image) }}" alt="{{ $service->name }}" class="img-responsive img-rounded" style="width: 300px; height: 200px; object-fit: cover;">
                     </div>
-					<div class="service-dit">
-						<h3>Smart Swatch Editions</h3>
-						<p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.</p>
-					</div>
-                </div>
-                <!-- end service -->
-
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <a href="uploads/service_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="uploads/service_02.jpg" alt="" class="img-responsive img-rounded">
-                    </div>
-					<div class="service-dit">
-						<h3>Web UI Kit Design</h3>
-						<p>Duis at tellus at dui tincidunt scelerisque nec sed felis. Suspendisse id dolor sed leo rutrum euismod. Nullam vestibulum fermentum erat. It nam auctor. </p>
-					</div>
-                </div>
-                <!-- end service -->
-
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <a href="uploads/service_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="uploads/service_03.jpg" alt="" class="img-responsive img-rounded">
-                    </div>
-					<div class="service-dit">
-						<h3>Mobile Optimization</h3>
-						<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis accumsan.</p>
-					</div>
-                </div>
-                <!-- end service -->
-
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <a href="uploads/service_04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="uploads/service_04.jpg" alt="" class="img-responsive img-rounded">
-                    </div>
-					<div class="service-dit">
-						<h3>Digital Design for Mac</h3>
-						<p>Praesent in neque congue sapien lobortis faucibus id eget erat. <br>Pellentesque maximus rutrum felis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-					</div>
-                </div>
-                <!-- end service -->
-            </div><!-- end row -->
-
-            <hr class="hr1">
-
-            <div class="text-center">
-                <a data-scroll href="#portfolio" class="btn btn-light btn-radius btn-brd">View Our Portfolio</a>
-            </div>
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-    <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('uploads/parallax_05.png');">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <div class="customwidget text-left">
-                        <h1>Beautiful Websites</h1>
-                        <p>Full access control of the background parallax effects, <br>change your awesome background elements and edit colors from style.css or colors.css</p>
-                        <ul class="list-inline">
-                            <li><i class="fa fa-check"></i> Custom Sections</li>
-                            <li><i class="fa fa-check"></i> Parallax's</li>
-                            <li><i class="fa fa-check"></i> Icons & PSD</li>
-                            <li><i class="fa fa-check"></i> Limitless Colors</li>
-                        </ul><!-- end list -->
-                        <a href="#services" data-scroll class="btn btn-light btn-radius btn-brd">Learn More</a>
-                    </div>
-                </div><!-- end col -->
-				<div class="col-md-6">
-                    <div class="text-center image-center hidden-sm hidden-xs">
-                        <img src="uploads/device_03.png" alt="" class="img-responsive wow fadeInUp">
+                    <div class="service-dit">
+                        <h3>{{ $service->name }}</h3>
+                        <a href="#" class="btn text-dark" style="background-color: rgb(153, 204, 255); border-color: #99ccff;">
+                            Details
+                        </a>
                     </div>
                 </div>
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-	
+            @endforeach
+        </div><!-- end row -->
+    </div>
+</div>
+
+
+           
     <div id="features" class="section lb">
         <div class="container">
             <div class="section-title text-center">

@@ -37,8 +37,9 @@ class BannerController extends Controller
 
              $validatedData = $request->validate([
                 
-                'name'=>'required|min:1',
-                'details' => 'required|min:1',
+                 'serial_no'=>'required|min:1',
+                'title'=>'required|min:1',
+                'slogan' => 'required|min:1',
     
                  'photo'=>'required|min:1'
 
@@ -56,8 +57,8 @@ class BannerController extends Controller
           $name=time().$file->getClientOriginalName();
           $file->move(public_path().'/images/', $name);
       }
-
-      $content=new Content;
+      
+      $banner=new Baneer;
 
       $banner->serial_no=$request->get('serial_no');
       $banner->title=$request->get('title');

@@ -15,20 +15,22 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/logos/logo.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/logos/logo.png">
+   <!-- Favicon -->
+<link rel="shortcut icon" href="{{ asset('images/logos/logo.png') }}" type="image/x-icon">
+<link rel="apple-touch-icon" href="{{ asset('images/logos/logo.png') }}">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+<!-- Site CSS -->
+<link rel="stylesheet" href="{{ asset('style.css') }}">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
-    <!-- Modernizer for Portfolio -->
-    <script src="js/modernizer.js"></script>
+<!-- Modernizer for Portfolio -->
+<script src="{{ asset('js/modernizer.js') }}"></script>
+
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -95,7 +97,7 @@
                     </div>
                     <div class="phone-box">
                         <a href="tel:1234567890" style="color: #ffffff; text-decoration: none;">
-                            <i class="fa fa-phone" aria-hidden="true"></i> +1 234 567 890
+                            <i class="fa fa-phone" aria-hidden="true"></i> {{$phone->description}}
                         </a>
                     </div>
                 </div>
@@ -104,11 +106,11 @@
                 <div class="right-top" style="text-align: right;">
                     <div class="social-box">
                         <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 15px; justify-content: flex-end;">
-                            <li><a href="#" style="color: #ffffff; font-size: 20px;"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#" style="color: #ffffff; font-size: 20px;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#" style="color: #ffffff; font-size: 20px;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#" style="color: #ffffff; font-size: 20px;"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#" style="color: #ffffff; font-size: 20px;"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
+                            <li><a href="{{$fb->description}}" style="color: #ffffff; font-size: 20px;"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="{{$insta->description}}" style="color: #ffffff; font-size: 20px;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="{{$ld->description}}" style="color: #ffffff; font-size: 20px;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                            <li><a href="{{$twitter->description}}" style="color: #ffffff; font-size: 20px;"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -132,10 +134,10 @@
                 <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
         <li><a href="/" id="home-link">Home</a></li>
-        <li><a href="/about_us" id="about-link">About us</a></li>
-        <li><a href="/services" id="services-link">Our Services</a></li>
-        <li><a href="/portfolio" id="portfolio-link">Portfolio</a></li>
-        <li><a href="/contact" id="contact-link">Contact</a></li>
+        <li><a href="{{route('about_us')}}" id="about-link">About us</a></li>
+        <li><a href="{{route('services')}}" id="services-link">Our Services</a></li>
+        <li><a href="{{route('portfolio')}}" id="portfolio-link">Portfolio</a></li>
+        <li><a href="{{route('contact')}}" id="contact-link">Contact</a></li>
     </ul>
 </div>
             </div>

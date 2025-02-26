@@ -5,7 +5,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orbit Media</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/logos/logo.png') }}" type="image/x-icon">
+<link rel="apple-touch-icon" href="{{ asset('images/logos/logo.png') }}">
+
+ 
 	<!-- BOOTSTRAP STYLES-->
   <link href="{{url('/assets/css/bootstrap.css')}}" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">

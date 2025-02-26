@@ -52,7 +52,7 @@
 <tr>
 <th><center>Image</center></th>
  <th><center>Name</center></th>
- <th><center>Description</center></th>
+ 
 </tr>
 
 
@@ -65,16 +65,7 @@
 
 <td><center><img src="/images/{{$service->image}}" alt="" height="60px" width="90"></center></td>
 <td><center>{{$service->name}}</center></td>
-<td><center>
-    
 
-<?php
-
-echo $service->details;
-
-?>
-
-</center></td>
 
 
 <td colspan="2">
