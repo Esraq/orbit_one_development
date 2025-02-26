@@ -55,8 +55,8 @@
 
 <th><center>ID<center></th>
 <th><center>Title<center></th>
-<th><center>Slogan</center></th>
-<th><center>Description</center></th>
+<th><center>Placement</center></th>
+
 
 
 
@@ -69,7 +69,6 @@
 <td><center>{{$content->title}}</center></td>
 
 <td><center>{{$content->slogan}}</center></td>
-<td><center>{{$content->description}}</center></td>
 
 
 <td colspan="2">

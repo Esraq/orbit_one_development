@@ -15,7 +15,7 @@ class ContentController extends Controller
      */
     public function index()
     {
-        $contents=Content::paginate(2);
+        $contents=Content::paginate(20);
         
         view()->share('contents', $contents);
 

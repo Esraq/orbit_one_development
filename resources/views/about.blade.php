@@ -10,8 +10,8 @@
 					<div class="banner">
 						<h2>About Us</h2>
 						<ul class="page-title-link">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About Us</a></li>
+							<li><a href="{{route('/')}}">Home</a></li>
+							<li><a href="{{route('about_us')}}">About Us</a></li>
 						</ul>
 					</div>
 				</div>
@@ -24,19 +24,35 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">
-                        <h4>About Us</h4>
-                        <h2>Welcome to GoodWEB Solutions</h2>
-                        <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+                       
+                        <h2>Our Mission</h2>
+                        <p>
+          
 
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. </p>
+    
+                         {{$mission->description}}
+   
 
-                        <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>
+
+
+
+
+
+                        </p>
+
+
+                        <h2>Our Aim</h2>
+
+                        <p> {{$aim->description}} </p>
+
+                        <a href="{{route('services')}}" class="btn btn-light btn-radius btn-brd grd1">know More</a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
                 <div class="col-md-6">
                     <div class="post-media wow fadeIn">
-                        <img src="uploads/about_01.jpg" alt="" class="img-responsive img-rounded">
+                    <img src="{{ asset('uploads/about_01.jpg') }}" alt="About Image" class="img-responsive img-rounded">
+
                         <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
                     </div><!-- end media -->
                 </div><!-- end col -->
@@ -47,19 +63,20 @@
             <div class="row">
 				<div class="col-md-6">
                     <div class="post-media wow fadeIn">
-                        <img src="uploads/about_02.jpg" alt="" class="img-responsive img-rounded">
+                    <img src="{{ asset('uploads/about_02.jpg') }}" alt="About Image" class="img-responsive img-rounded">
+
                     </div><!-- end media -->
                 </div><!-- end col -->
 				
                 <div class="col-md-6">
                     <div class="message-box">
-                        <h4>Who We are</h4>
-                        <h2>We Are GoodWEB Solutions</h2>
-                        <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+                      
+                        <h2>Most Exclusive Service</h2>
+                       
 
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. </p>
+                        <p> {{$exclusive->description}} </p>
 
-                        <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>
+                        <a href="{{route('services')}}" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
             </div><!-- end row -->

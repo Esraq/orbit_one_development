@@ -5,7 +5,7 @@
 
 <div class="panel panel-default">
                         <div class="panel-heading">
-                            <center>Add Banner</center>
+                            <center>Add Portfolio</center>
                         </div>
                         <div class="panel-body">
                             <div class="row">

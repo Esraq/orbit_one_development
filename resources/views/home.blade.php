@@ -73,7 +73,8 @@
 
                 <div class="col-md-6">
                     <div class="post-media wow fadeIn">
-                        <img src="uploads/about_01.jpg" alt="" class="img-responsive img-rounded">
+                    <img src="{{ asset('uploads/about_01.jpg') }}" alt="About Image" class="img-responsive img-rounded">
+
                         <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
                     </div><!-- end media -->
                 </div><!-- end col -->
@@ -84,7 +85,8 @@
             <div class="row">
 				<div class="col-md-6">
                     <div class="post-media wow fadeIn">
-                        <img src="uploads/about_02.jpg" alt="" class="img-responsive img-rounded">
+                    <img src="{{ asset('uploads/about_02.jpg') }}" alt="About Image" class="img-responsive img-rounded">
+
                     </div><!-- end media -->
                 </div><!-- end col -->
 				
@@ -168,7 +170,7 @@
         <div class="container">
             <div class="section-title text-center">
                 <h3>Features & Overviews</h3>
-                <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, <br>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                <p class="lead">A modern system offering seamless integration, automation, real-time analytics, security, and an intuitive user experience for optimized performance. </p>
             </div><!-- end title -->
 
             <div class="row">
@@ -178,34 +180,40 @@
                             <i class="flaticon-wordpress-logo"></i>
                             <div class="fl-inner">
                                 <h4>WordPress Installation</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                                <p>Empowering Innovation
+                                Through cutting-edge technology</p>
                             </div>
                         </li>
                         <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
                             <i class="flaticon-windows"></i>
                             <div class="fl-inner">
                                 <h4>Browser Compatible</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                                <p>Empowering Innovation
+                                Through cutting-edge technology </p>
                             </div>
                         </li>
                         <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
                             <i class="flaticon-price-tag"></i>
                             <div class="fl-inner">
                                 <h4>eCommerce Ready</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                                <p>Empowering Innovation
+                                Through cutting-edge technology </p>
                             </div>
                         </li>
                         <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                             <i class="flaticon-new-file"></i>
                             <div class="fl-inner">
                                 <h4>Easy to Customize</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                                <p>Empowering Innovation
+                                Through cutting-edge technology. </p>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4 hidden-xs hidden-sm">
-                    <img src="uploads/ipad.png" class="img-center img-responsive" alt="">
+                <img src="{{ asset('uploads/ipad.jpg') }}" class="img-center img-responsive" alt="iPad Image" style="height: 100%;">
+
+
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <ul class="features-right">
@@ -213,28 +221,32 @@
                             <i class="flaticon-pantone"></i>
                             <div class="fr-inner">
                                 <h4>Limitless Colors</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                                <p>Empowering Innovation
+                                Through cutting-edge technology </p>
                             </div>
                         </li>
                         <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
                             <i class="flaticon-cloud-computing"></i>
                             <div class="fr-inner">
                                 <h4>Lifetime Update</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                                <p>Empowering Innovation
+                                Through cutting-edge technology. </p>
                             </div>
                         </li>
                         <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
                             <i class="flaticon-line-graph"></i>
                             <div class="fr-inner">
                                 <h4>SEO Friendly</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                                <p>Empowering Innovation
+                                Through cutting-edge technology </p>
                             </div>
                         </li>
                         <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                             <i class="flaticon-coding"></i>
                             <div class="fr-inner">
                                 <h4>Simple Clean Code</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                                <p>Empowering Innovation
+                                Through cutting-edge technology </p>
                             </div>
                         </li>
                     </ul>

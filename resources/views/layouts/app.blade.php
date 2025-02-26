@@ -136,7 +136,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="/" id="home-link">Home</a></li>
+        <li><a href="{{route('/')}}" id="home-link">Home</a></li>
         <li><a href="{{route('about_us')}}" id="about-link">About us</a></li>
         <li><a href="{{route('services')}}" id="services-link">Our Services</a></li>
         <li><a href="{{route('portfolio')}}" id="portfolio-link">Portfolio</a></li>
@@ -161,24 +161,24 @@
                     <img src="{{ asset('images/logos/logo.png') }}" height="60" width="120" alt="Logo">
 
                     </div>
-                    <p style="color: #d1d1d1;">Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
-                    <p style="color: #d1d1d1;">Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
+                    <p style="color: #d1d1d1;"><b>Kirkdale House, Kirkdale Road E11 1HP London UK</b><br>
+<b>Phone: 07935390848</b><br>
+<b>Email: info@theorbit.one</b></p>
+                    
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="widget clearfix">
                     <div class="widget-title">
-                        <h3 style="color: #ffffff;">Pages</h3>
+                        <h3 style="color: #ffffff;">Important Link</h3>
                     </div>
 
                     <ul class="footer-links hov" style="list-style: none; padding: 0;">
-                        <li><a href="#" style="color: #ffffff; text-decoration: none;">Home <span class="icon icon-arrow-right2"></span></a></li>
-                        <li><a href="#" style="color: #ffffff; text-decoration: none;">Blog <span class="icon icon-arrow-right2"></span></a></li>
-                        <li><a href="#" style="color: #ffffff; text-decoration: none;">Pricing <span class="icon icon-arrow-right2"></span></a></li>
-                        <li><a href="#" style="color: #ffffff; text-decoration: none;">About <span class="icon icon-arrow-right2"></span></a></li>
-                        <li><a href="#" style="color: #ffffff; text-decoration: none;">Faq <span class="icon icon-arrow-right2"></span></a></li>
-                        <li><a href="#" style="color: #ffffff; text-decoration: none;">Contact <span class="icon icon-arrow-right2"></span></a></li>
+                        <li><a href="https://www.theorbit.one/" style="color: #ffffff; text-decoration: none;">Orbit Media Solutions <span class="icon icon-arrow-right2"></span></a></li>
+                        <li><a href="https://ecostructiveit.com/" style="color: #ffffff; text-decoration: none;">Ecostructive IT <span class="icon icon-arrow-right2"></span></a></li>
+                        <li><a href="https://shulovmart.com/" style="color: #ffffff; text-decoration: none;">Ecommerece <span class="icon icon-arrow-right2"></span></a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -186,15 +186,17 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="footer-distributed widget clearfix">
                     <div class="widget-title">
-                        <h3 style="color: #ffffff;">Subscribe</h3>
-                        <p style="color: #d1d1d1;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which one know this tricks.</p>
+                        <h3 style="color: #ffffff;">Orbit</h3>
+                        <p style="color: #d1d1d1;">
+
+                        At Orbit Media Solutions, we are dedicated to crafting innovative digital strategies that drive results and build lasting partnerships. Your success is our mission, and we’re here to help your business reach for the stars.
+
+
+                        </p>
                     </div>
 
                     <div class="footer-right">
-                        <form method="get" action="#" style="position: relative;">
-                            <input placeholder="Subscribe our newsletter.." name="search" style="width: 100%; padding: 10px; border: none; border-radius: 5px;">
-                            <i class="fa fa-envelope-o" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: #020079;"></i>
-                        </form>
+                        
                     </div>                        
                 </div>
             </div>
@@ -208,9 +210,9 @@
         <div class="footer-distributed">
             <div class="footer-left">                   
                 <p class="footer-company-name" style="color: #ffffff; font-size: 14px; margin: 0;">
-                    All Rights Reserved. &copy; 2018 
-                    <a href="#" style="color: #fcbf02; text-decoration: none;">GoodWEB</a> Design By : 
-                    <a href="https://html.design/" style="color: #fcbf02; text-decoration: none;">html design</a>
+                    All Rights Reserved. &copy; 2025
+                    <a href="https://www.theorbit.one/" style="color: #fcbf02; text-decoration: none;">Orbit One</a> Design By : 
+                    <a href="https://ecostructiveit.com/" style="color: #fcbf02; text-decoration: none;">Ecostructive IT</a>
                 </p>
             </div>
         </div>

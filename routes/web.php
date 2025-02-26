@@ -30,7 +30,7 @@ Route::resource('/admin',AdminController::class);
 Route::resource('/portfolios',PortfolioController::class);
 
 
-Route::get('/', [SiteController::class, 'home'])->name('home'); 
+Route::get('/', [SiteController::class, 'home'])->name('/'); 
 
 Route::get('/about-us', [SiteController::class, 'about'])->name('about_us'); 
 

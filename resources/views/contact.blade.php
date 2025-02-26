@@ -9,7 +9,7 @@
         <div class="container">
             <div class="section-title text-center">
                 <h3>Get in touch</h3>
-                <p class="lead">Let us give you more details about the special offer website you want us. Please fill out the form below. <br>We have million of website owners who happy to work with us!</p>
+               
             </div><!-- end title -->
 
             <div class="row">
@@ -28,24 +28,24 @@
 							<i class="icon icon-location2"></i>
 						</div>
 						<h3>Headquarters</h3>
-						<p>PO Box 16122 Collins Street West 
-							<br> Victoria 8007 Australia</p>
+						<p>{{$items->description}} 
+							</p>
 					</div>
 					<div class="address-item">
 						<div class="address-icon">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</div>
 						<h3>Email Us</h3>
-						<p>info@yoursite.com
-							<br>info@yoursite.com</p>
+						<p>{{$email->description}}
+							</p>
 					</div>
 					<div class="address-item">
 						<div class="address-icon">
 							<i class="icon icon-headphones"></i>
 						</div>
 						<h3>Call Us</h3>
-						<p>+61 3 8376 6284
-							<br>+61 3 8376 6185</p>
+						<p>{{$phone->description}}
+							</p>
 					</div>
 				</div>
 			</div><!-- end row -->

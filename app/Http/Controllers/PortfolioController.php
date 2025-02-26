@@ -62,9 +62,9 @@ class PortfolioController extends Controller
         $portfolio->image=$name;
         $portfolio->save();
 
-        echo "Done";
+        ///echo "Done";
         
-        ///return redirect()->route('portfolio.index')->with('success', 'Portfolio created successfully!');
+        return redirect('portfolios')->with('success', 'Portfolio created successfully!');
   
          
   

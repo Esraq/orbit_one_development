@@ -14,7 +14,7 @@
 
 <div class="panel panel-default">
                         <div class="panel-heading">
-                            <center>Banner List</center>
+                            <center>Portfolio List</center>
                         </div>
 
                         <script>
@@ -43,6 +43,12 @@
 
 
 
+<br>
+
+
+<div class="text-right mb-3" style="padding-right: 20px;">
+    <a href="{{ route('portfolios.create') }}" class="btn btn-success">Create</a>
+</div>
 <br>
 
 
